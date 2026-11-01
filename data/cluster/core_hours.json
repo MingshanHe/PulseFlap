@@ -1,0 +1,14 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster.",
+ "core_hours": {
+  "es_refinement_pilot": 54.3,
+  "P4": 93.6,
+  "P6": 44.8,
+  "P5": 120.2,
+  "P1": 128.3,
+  "Q2": 191.7,
+  "P3": 259.0
+ },
+ "total": 892.0,
+ "workstation_q1_step_size": 97.0
+}

@@ -1,0 +1,175 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster.",
+ "naming": "probe = untuned classical + pulse law",
+ "set": "P3: pulse law (k_theta, k_q, threshold, window width, phase offset) tuned jointly with the 28 schedule parameters by descend_cls-style ES at the SNN's budget (6,528 episodes per seed), 3 seeds; selection by the descend_cls rule (0 crashes, no hard tilt)",
+ "cost_core_hours": 259.0,
+ "n": 192,
+ "evaluation_sets": {
+  "nominal": "T.cases9 base 2_099_100_000",
+  "kick": "blind12 kick base 2_099_300_000"
+ },
+ "start_law": {
+  "k_theta": 8,
+  "k_q": 0.4,
+  "threshold": 0.5,
+  "width_deg": 45,
+  "psi_off_deg": 0
+ },
+ "selected_generation": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 9
+ },
+ "tuned_law": {
+  "s1": {
+   "k_theta": 7.701,
+   "k_q": 0.4178,
+   "threshold": 0.5324,
+   "width_deg": 43.8,
+   "psi_off_deg": 2.88
+  },
+  "s2": {
+   "k_theta": 7.279,
+   "k_q": 0.411,
+   "threshold": 0.5371,
+   "width_deg": 48.7,
+   "psi_off_deg": -3.07
+  },
+  "s3": {
+   "k_theta": 7.367,
+   "k_q": 0.4336,
+   "threshold": 0.5123,
+   "width_deg": 41.7,
+   "psi_off_deg": 1.07
+  }
+ },
+ "references": {
+  "classical": {
+   "nominal": 1,
+   "kick": 59
+  },
+  "probe": {
+   "nominal": 0,
+   "kick": 5
+  }
+ },
+ "note": "delta: paired ratio difference [bootstrap 95% CI], lower is better; mcnemar: [tuned-only crashes, probe-only crashes, exact p]",
+ "seeds": {
+  "s1": {
+   "nominal": {
+    "crashes": 0,
+    "d_probe": [
+     -0.026,
+     -0.038,
+     -0.015
+    ],
+    "d_cls": [
+     -0.236,
+     -0.392,
+     -0.135
+    ],
+    "mcnemar": [
+     0,
+     0,
+     null
+    ]
+   },
+   "kick": {
+    "crashes": 7,
+    "d_probe": [
+     0.189,
+     -0.004,
+     0.446
+    ],
+    "d_cls": [
+     -0.963,
+     -1.195,
+     -0.737
+    ],
+    "mcnemar": [
+     3,
+     1,
+     0.63
+    ]
+   }
+  },
+  "s2": {
+   "nominal": {
+    "crashes": 0,
+    "d_probe": [
+     -0.03,
+     -0.041,
+     -0.021
+    ],
+    "d_cls": [
+     -0.239,
+     -0.397,
+     -0.138
+    ],
+    "mcnemar": [
+     0,
+     0,
+     null
+    ]
+   },
+   "kick": {
+    "crashes": 4,
+    "d_probe": [
+     -0.049,
+     -0.258,
+     0.147
+    ],
+    "d_cls": [
+     -1.02,
+     -1.257,
+     -0.789
+    ],
+    "mcnemar": [
+     1,
+     2,
+     1.0
+    ]
+   }
+  },
+  "s3": {
+   "nominal": {
+    "crashes": 0,
+    "d_probe": [
+     -0.033,
+     -0.046,
+     -0.022
+    ],
+    "d_cls": [
+     -0.242,
+     -0.401,
+     -0.14
+    ],
+    "mcnemar": [
+     0,
+     0,
+     null
+    ]
+   },
+   "kick": {
+    "crashes": 6,
+    "d_probe": [
+     0.028,
+     -0.077,
+     0.196
+    ],
+    "d_cls": [
+     -1.002,
+     -1.239,
+     -0.78
+    ],
+    "mcnemar": [
+     2,
+     1,
+     1.0
+    ]
+   }
+  }
+ },
+ "reading": "tuning beats the untuned law nominally in 3/3 seeds by about -0.03; no improvement under the hit (all CIs include 0)",
+ "not_run": "the tuned law against the SNN under sustained disturbance"
+}

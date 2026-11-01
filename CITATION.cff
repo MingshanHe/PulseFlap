@@ -1,0 +1,17 @@
+# Placeholder: the citation will be completed when the paper is published.
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "PulseFlap: code and data for A Phase-Timed Pulse Channel to Robust Flapping-Wing Manoeuvres"
+type: software
+authors:
+  - name: "To be added"
+repository-code: "https://github.com/MingshanHe/PulseFlap"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "A Phase-Timed Pulse Channel to Robust Flapping-Wing Manoeuvres"
+  authors:
+    - name: "To be added"
+  conference:
+    name: "To be added"
+  year: 2027

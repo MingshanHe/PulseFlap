@@ -1,0 +1,351 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster.",
+ "n": 576,
+ "complete": true,
+ "cost_core_hours": 120.2,
+ "cost_split": "x1.5 about 71, x1.75 about 49",
+ "x1_5": {
+  "base": "2_104_400_000",
+  "R1": {
+   "criterion": ">= 3 of 5 SNN seeds with paired delta vs rule upper 95% bound < 0 and crashes <= rule",
+   "met": true,
+   "seeds": 5
+  },
+  "R2": {
+   "criterion": "SNN family minus PPO family, upper bound < 0 under BOTH normalisers",
+   "met": true,
+   "probe_medians": [
+    -0.206,
+    -0.334,
+    -0.09
+   ],
+   "classical_medians": [
+    -0.113,
+    -0.189,
+    -0.044
+   ]
+  },
+  "arms": {
+   "rule": {
+    "crashes": 60
+   },
+   "classical": {
+    "crashes": 116,
+    "d_rule": [
+     1.531,
+     1.22,
+     1.859
+    ]
+   },
+   "cls_es_s1": {
+    "crashes": 104,
+    "d_rule": [
+     0.894,
+     0.658,
+     1.142
+    ]
+   },
+   "snn_s1": {
+    "crashes": 20,
+    "d_rule": [
+     -0.768,
+     -1.188,
+     -0.377
+    ],
+    "mcnemar": [
+     13,
+     53,
+     7e-07
+    ]
+   },
+   "snn_s2": {
+    "crashes": 9,
+    "d_rule": [
+     -0.917,
+     -1.311,
+     -0.545
+    ],
+    "mcnemar": [
+     2,
+     53,
+     9e-14
+    ]
+   },
+   "snn_s3": {
+    "crashes": 20,
+    "d_rule": [
+     -0.864,
+     -1.286,
+     -0.474
+    ],
+    "mcnemar": [
+     13,
+     53,
+     7e-07
+    ]
+   },
+   "snn_s4": {
+    "crashes": 14,
+    "d_rule": [
+     -0.907,
+     -1.313,
+     -0.514
+    ],
+    "mcnemar": [
+     7,
+     53,
+     8e-10
+    ]
+   },
+   "snn_s5": {
+    "crashes": 30,
+    "d_rule": [
+     -0.571,
+     -1.007,
+     -0.147
+    ],
+    "mcnemar": [
+     18,
+     48,
+     0.0003
+    ]
+   },
+   "ppo_s1": {
+    "crashes": 43,
+    "d_rule": [
+     -0.476,
+     -0.917,
+     -0.055
+    ],
+    "mcnemar": [
+     34,
+     51,
+     0.082
+    ]
+   },
+   "ppo_s2": {
+    "crashes": 18,
+    "d_rule": [
+     -0.655,
+     -1.088,
+     -0.234
+    ],
+    "mcnemar": [
+     11,
+     53,
+     1e-07
+    ]
+   },
+   "ppo_s3": {
+    "crashes": 18,
+    "d_rule": [
+     -0.677,
+     -1.107,
+     -0.27
+    ],
+    "mcnemar": [
+     10,
+     52,
+     6e-08
+    ]
+   },
+   "ppo_s4": {
+    "crashes": 22,
+    "d_rule": [
+     -0.599,
+     -1.04,
+     -0.172
+    ],
+    "mcnemar": [
+     14,
+     52,
+     3e-06
+    ]
+   },
+   "ppo_s5": {
+    "crashes": 21,
+    "d_rule": [
+     -0.591,
+     -1.032,
+     -0.171
+    ],
+    "mcnemar": [
+     13,
+     52,
+     1e-06
+    ]
+   }
+  }
+ },
+ "x1_75": {
+  "base": "2_104_600_000",
+  "status": "descriptive (R3)",
+  "note": "delta: d_rule [95% CI]; mcnemar: [arm-only, rule-only, p]",
+  "arms": {
+   "rule": {
+    "crashes": 417
+   },
+   "classical": {
+    "crashes": 449,
+    "d_rule": [
+     0.047,
+     0.035,
+     0.06
+    ]
+   },
+   "cls_es_s1": {
+    "crashes": 448,
+    "d_rule": [
+     0.044,
+     0.033,
+     0.057
+    ]
+   },
+   "snn_s1": {
+    "crashes": 218,
+    "d_rule": [
+     -0.296,
+     -0.331,
+     -0.261
+    ],
+    "mcnemar": [
+     6,
+     205,
+     7e-53
+    ]
+   },
+   "snn_s2": {
+    "crashes": 216,
+    "d_rule": [
+     -0.294,
+     -0.328,
+     -0.261
+    ],
+    "mcnemar": [
+     1,
+     202,
+     3e-59
+    ]
+   },
+   "snn_s3": {
+    "crashes": 214,
+    "d_rule": [
+     -0.303,
+     -0.337,
+     -0.269
+    ],
+    "mcnemar": [
+     3,
+     206,
+     4e-57
+    ]
+   },
+   "snn_s4": {
+    "crashes": 214,
+    "d_rule": [
+     -0.305,
+     -0.339,
+     -0.271
+    ],
+    "mcnemar": [
+     3,
+     206,
+     4e-57
+    ]
+   },
+   "snn_s5": {
+    "crashes": 221,
+    "d_rule": [
+     -0.295,
+     -0.33,
+     -0.261
+    ],
+    "mcnemar": [
+     6,
+     202,
+     5e-52
+    ]
+   },
+   "ppo_s1": {
+    "crashes": 229,
+    "d_rule": [
+     -0.283,
+     -0.319,
+     -0.247
+    ],
+    "mcnemar": [
+     13,
+     201,
+     null
+    ]
+   },
+   "ppo_s2": {
+    "crashes": 214,
+    "d_rule": [
+     -0.296,
+     -0.331,
+     -0.262
+    ],
+    "mcnemar": [
+     2,
+     205,
+     null
+    ]
+   },
+   "ppo_s3": {
+    "crashes": 214,
+    "d_rule": [
+     -0.296,
+     -0.33,
+     -0.262
+    ],
+    "mcnemar": [
+     2,
+     205,
+     null
+    ]
+   },
+   "ppo_s4": {
+    "crashes": 218,
+    "d_rule": [
+     -0.292,
+     -0.327,
+     -0.257
+    ],
+    "mcnemar": [
+     5,
+     204,
+     null
+    ]
+   },
+   "ppo_s5": {
+    "crashes": 216,
+    "d_rule": [
+     -0.294,
+     -0.328,
+     -0.26
+    ],
+    "mcnemar": [
+     3,
+     204,
+     null
+    ]
+   }
+  },
+  "ppo_mcnemar_p": "all p <= 2e-44",
+  "snn_minus_ppo": {
+   "rule_medians": [
+    -0.0063,
+    -0.0115,
+    -0.0012
+   ],
+   "classical_medians": [
+    -0.0063,
+    -0.0114,
+    -0.0012
+   ]
+  }
+ },
+ "reading": "SNN-over-PPO margin large at x1.5, nearly vanishes at x1.75 (crash rates 37-40% for both)",
+ "naming": "probe = classical + pulse law (the classical controller with its pulse law kept on during manoeuvres, ablate14.ClassicalUnsuppressed); rule = the same arm in P5; snn_s<k> = snn11_s<k>; ppo_s<k> = mlp_ppo_s<k>"
+}

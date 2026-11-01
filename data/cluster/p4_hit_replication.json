@@ -1,0 +1,253 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster.",
+ "note": "delta: paired ratio difference from paired_report (lower is better), [bootstrap 95% CI]; mcnemar: [arm-only crashes, reference-only crashes, exact p]",
+ "set": "P4 confirmatory 3 mN m hit, fresh seed base 2_104_000_000, 256 cases per task",
+ "n": 768,
+ "criterion": "probe crashes < SNN crashes in >= 4 of 5 seeds (McNemar p < 0.05)",
+ "criterion_met": true,
+ "seeds_passing": 5,
+ "cost_core_hours": 93.6,
+ "arms": {
+  "probe": {
+   "crashes": 14,
+   "d_cls": [
+    -1.489,
+    -1.682,
+    -1.299
+   ],
+   "d_probe": null,
+   "mcnemar": null
+  },
+  "classical": {
+   "crashes": 182,
+   "d_cls": null,
+   "d_probe": [
+    2.294,
+    1.981,
+    2.609
+   ],
+   "mcnemar": [
+    168,
+    0,
+    5e-51
+   ]
+  },
+  "cls_es_s1": {
+   "crashes": 179,
+   "d_cls": [
+    -0.079,
+    -0.156,
+    -0.0
+   ],
+   "d_probe": [
+    2.107,
+    1.795,
+    2.424
+   ],
+   "mcnemar": [
+    167,
+    2,
+    4e-47
+   ]
+  },
+  "cls_es_s2": {
+   "crashes": 171,
+   "d_cls": [
+    -0.114,
+    -0.18,
+    -0.05
+   ],
+   "d_probe": [
+    2.08,
+    1.777,
+    2.401
+   ],
+   "mcnemar": [
+    158,
+    1,
+    4e-46
+   ]
+  },
+  "snn_s1": {
+   "crashes": 134,
+   "d_cls": [
+    -0.242,
+    -0.453,
+    -0.033
+   ],
+   "d_probe": [
+    1.752,
+    1.481,
+    2.04
+   ],
+   "mcnemar": [
+    121,
+    1,
+    5e-35
+   ]
+  },
+  "snn_s2": {
+   "crashes": 95,
+   "d_cls": [
+    -0.728,
+    -0.883,
+    -0.57
+   ],
+   "d_probe": [
+    1.16,
+    0.904,
+    1.421
+   ],
+   "mcnemar": [
+    86,
+    5,
+    4e-20
+   ]
+  },
+  "snn_s3": {
+   "crashes": 95,
+   "d_cls": [
+    -0.735,
+    -0.886,
+    -0.581
+   ],
+   "d_probe": [
+    1.112,
+    0.864,
+    1.365
+   ],
+   "mcnemar": [
+    86,
+    5,
+    4e-20
+   ]
+  },
+  "snn_s4": {
+   "crashes": 68,
+   "d_cls": [
+    -0.953,
+    -1.119,
+    -0.784
+   ],
+   "d_probe": [
+    0.884,
+    0.658,
+    1.122
+   ],
+   "mcnemar": [
+    59,
+    5,
+    9e-13
+   ]
+  },
+  "snn_s5": {
+   "crashes": 107,
+   "d_cls": [
+    -0.666,
+    -0.821,
+    -0.511
+   ],
+   "d_probe": [
+    1.255,
+    0.985,
+    1.529
+   ],
+   "mcnemar": [
+    97,
+    4,
+    5e-24
+   ]
+  },
+  "ppo_s1": {
+   "crashes": 117,
+   "d_cls": [
+    -0.536,
+    -0.703,
+    -0.372
+   ],
+   "d_probe": [
+    1.383,
+    1.117,
+    1.661
+   ],
+   "mcnemar": [
+    106,
+    3,
+    7e-28
+   ]
+  },
+  "ppo_s2": {
+   "crashes": 117,
+   "d_cls": [
+    -0.554,
+    -0.688,
+    -0.418
+   ],
+   "d_probe": [
+    1.436,
+    1.161,
+    1.724
+   ],
+   "mcnemar": [
+    107,
+    4,
+    5e-27
+   ]
+  },
+  "ppo_s3": {
+   "crashes": 116,
+   "d_cls": [
+    -0.543,
+    -0.679,
+    -0.4
+   ],
+   "d_probe": [
+    1.447,
+    1.162,
+    1.734
+   ],
+   "mcnemar": [
+    106,
+    4,
+    9e-27
+   ]
+  },
+  "ppo_s4": {
+   "crashes": 118,
+   "d_cls": [
+    -0.519,
+    -0.661,
+    -0.378
+   ],
+   "d_probe": [
+    1.456,
+    1.186,
+    1.737
+   ],
+   "mcnemar": [
+    108,
+    4,
+    2.5e-27
+   ]
+  },
+  "ppo_s5": {
+   "crashes": 125,
+   "d_cls": [
+    -0.481,
+    -0.619,
+    -0.345
+   ],
+   "d_probe": [
+    1.518,
+    1.231,
+    1.808
+   ],
+   "mcnemar": [
+    115,
+    4,
+    2.5e-29
+   ]
+  }
+ },
+ "naming": "probe = classical + pulse law (the classical controller with its pulse law kept on during manoeuvres, ablate14.ClassicalUnsuppressed); rule = the same arm in P5; snn_s<k> = snn11_s<k>; ppo_s<k> = mlp_ppo_s<k>"
+}

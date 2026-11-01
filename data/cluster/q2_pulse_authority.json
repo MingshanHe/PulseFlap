@@ -1,0 +1,308 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster.",
+ "authority_def": "(d135 - d315)/2, rad/s per 0.1 s burst (90 deg window)",
+ "plants": [
+  {
+   "key": "dens080",
+   "label": "density x0.8",
+   "authority": 0.98,
+   "kick": {
+    "classical": 70,
+    "probe": 31,
+    "snn": [
+     73,
+     47,
+     76,
+     61,
+     75
+    ],
+    "ppo": [
+     59,
+     54,
+     58,
+     49,
+     56
+    ]
+   },
+   "x1.5": {
+    "classical": 19,
+    "probe": 4,
+    "snn": [
+     26,
+     0,
+     19,
+     8,
+     38
+    ],
+    "ppo": [
+     21,
+     4,
+     4,
+     3,
+     4
+    ]
+   },
+   "snn_dprobe_x1.5": [
+    1.64,
+    -0.15,
+    1.21,
+    0.59,
+    2.23
+   ],
+   "x1.5_reading": "4/5 significantly worse"
+  },
+  {
+   "key": "volt095",
+   "label": "voltage x0.95",
+   "authority": 1.68,
+   "kick": {
+    "classical": 62,
+    "probe": 13,
+    "snn": [
+     48,
+     42,
+     48,
+     32,
+     51
+    ],
+    "ppo": [
+     57,
+     46,
+     49,
+     47,
+     46
+    ]
+   },
+   "x1.5": {
+    "classical": 23,
+    "probe": 1,
+    "snn": [
+     14,
+     0,
+     12,
+     7,
+     17
+    ],
+    "ppo": [
+     22,
+     5,
+     5,
+     4,
+     4
+    ]
+   },
+   "snn_dprobe_x1.5": [
+    0.96,
+    0.15,
+    0.75,
+    0.58,
+    1.39
+   ],
+   "x1.5_reading": "4/5 worse"
+  },
+  {
+   "key": "dens090",
+   "label": "density x0.9",
+   "authority": 1.767,
+   "kick": {
+    "classical": 58,
+    "probe": 7,
+    "snn": [
+     49,
+     34,
+     52,
+     26,
+     49
+    ],
+    "ppo": [
+     50,
+     43,
+     47,
+     39,
+     48
+    ]
+   },
+   "x1.5": {
+    "classical": 16,
+    "probe": 1,
+    "snn": [
+     14,
+     0,
+     4,
+     5,
+     20
+    ],
+    "ppo": [
+     9,
+     2,
+     2,
+     2,
+     3
+    ]
+   },
+   "snn_dprobe_x1.5": [
+    1.1,
+    0.16,
+    0.4,
+    0.61,
+    1.5
+   ],
+   "x1.5_reading": "4/5 worse"
+  },
+  {
+   "key": "dt5",
+   "label": "nominal",
+   "authority": 2.613,
+   "kick": {
+    "classical": 59,
+    "probe": 5,
+    "snn": [
+     40,
+     32,
+     34,
+     22,
+     38
+    ],
+    "ppo": [
+     47,
+     40,
+     47,
+     46,
+     41
+    ]
+   },
+   "x1.5": {
+    "classical": 32,
+    "probe": 11,
+    "snn": [
+     6,
+     3,
+     6,
+     6,
+     8
+    ],
+    "ppo": [
+     16,
+     7,
+     7,
+     8,
+     7
+    ]
+   },
+   "snn_dprobe_x1.5": [
+    -0.2,
+    -0.3,
+    -0.23,
+    -0.14,
+    0.01
+   ],
+   "x1.5_reading": "all CIs include 0 (underpowered; P5 576 cases 5/5)"
+  },
+  {
+   "key": "dens105",
+   "label": "density x1.05",
+   "authority": 2.968,
+   "marginal": true,
+   "kick": {
+    "classical": 106,
+    "probe": 88,
+    "snn": [
+     91,
+     101,
+     94,
+     94,
+     100
+    ],
+    "ppo": [
+     110,
+     105,
+     108,
+     101,
+     106
+    ]
+   },
+   "x1.5": {
+    "classical": 151,
+    "probe": 140,
+    "snn": [
+     96,
+     100,
+     101,
+     99,
+     108
+    ],
+    "ppo": [
+     112,
+     100,
+     104,
+     102,
+     101
+    ]
+   },
+   "snn_dprobe_x1.5": [
+    -0.22,
+    -0.2,
+    -0.2,
+    -0.21,
+    -0.18
+   ],
+   "x1.5_reading": "all CIs < 0"
+  },
+  {
+   "key": "volt105",
+   "label": "voltage x1.05",
+   "authority": 3.027,
+   "kick": {
+    "classical": 59,
+    "probe": 7,
+    "snn": [
+     36,
+     29,
+     33,
+     22,
+     33
+    ],
+    "ppo": [
+     47,
+     36,
+     42,
+     42,
+     39
+    ]
+   },
+   "x1.5": {
+    "classical": 43,
+    "probe": 25,
+    "snn": [
+     9,
+     3,
+     5,
+     7,
+     5
+    ],
+    "ppo": [
+     12,
+     5,
+     5,
+     5,
+     5
+    ]
+   },
+   "snn_dprobe_x1.5": [
+    -1.13,
+    -1.36,
+    -1.25,
+    -1.23,
+    -1.26
+   ],
+   "x1.5_reading": "all CIs < 0"
+  }
+ ],
+ "unflyable": [
+  "dens110",
+  "dens120",
+  "volt085"
+ ],
+ "core_hours": 191.7,
+ "naming": "probe = classical + pulse law (the classical controller with its pulse law kept on during manoeuvres, ablate14.ClassicalUnsuppressed); rule = the same arm in P5; snn_s<k> = snn11_s<k>; ppo_s<k> = mlp_ppo_s<k>"
+}

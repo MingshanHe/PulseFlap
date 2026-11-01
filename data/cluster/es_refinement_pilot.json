@@ -1,0 +1,112 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster. Arm values are test qualities on the 72-episode protocol.",
+ "set": "ES-refinement pilot, 72-episode protocol, 600 s training, ES seeds 0/1/2 (seed 0 = original hardcoded seed)",
+ "references": {
+  "frozen_s1": {
+   "quality": 0.91,
+   "crashes": 6,
+   "n": 72
+  },
+  "classical": {
+   "quality": 0.828,
+   "crashes": 10,
+   "n": 72
+  }
+ },
+ "criterion": "S2: beat frozen s1 by +0.005 with crashes <= frozen",
+ "criterion_met_any": false,
+ "arms": {
+  "C1": {
+   "test": [
+    0.8958,
+    0.8769,
+    0.8519
+   ],
+   "mean": 0.875,
+   "sd": 0.022,
+   "beat": 0,
+   "gate_accepted": 3
+  },
+  "C2": {
+   "test": [
+    0.9046,
+    0.8828,
+    0.8975
+   ],
+   "mean": 0.895,
+   "sd": 0.011,
+   "beat": 0,
+   "gate_accepted": 3
+  },
+  "C3": {
+   "test": [
+    0.9097,
+    0.91,
+    0.91
+   ],
+   "mean": 0.91,
+   "sd": 0.0,
+   "beat": 0,
+   "gate_accepted": 1
+  },
+  "full": {
+   "mean": 0.91,
+   "sd": 0.0,
+   "beat": 0,
+   "gate_accepted": 0
+  },
+  "no_gate": {
+   "test": [
+    0.9046,
+    0.8836,
+    0.8975
+   ],
+   "mean": 0.895,
+   "sd": 0.011,
+   "beat": 0
+  }
+ },
+ "phase2_3600s": {
+  "C2_s0": {
+   "test": 0.91,
+   "gate": "rejected"
+  },
+  "C2_s1": {
+   "test": 0.8822,
+   "gate": "accepted",
+   "note": "nominal crash"
+  },
+  "C3_s0": {
+   "test": 0.9104,
+   "gate": "accepted",
+   "note": "below +0.005 margin"
+  },
+  "C3_s1": {
+   "test": 0.91,
+   "gate": "rejected"
+  },
+  "caveat": "MAX_GENS hardcoded (C1 6, C2/full/no-gate 5, C3 3), PAIRS=4: stopped after 780-840 s; not a budget test"
+ },
+ "summary": {
+  "es_runs": 19,
+  "es_runs_detail": "phase 1: 15 = C1, C2, C3, full_es, no_gate x seeds 0/1/2; phase 2: 4 = C2, C3 x seeds 0/1 at 3600 s",
+  "deterministic_references": 2,
+  "evaluator_runs": 21,
+  "gens_in_600s": "0-3",
+  "validation_cases": 24,
+  "gate_accepted": "9 of 16 gated ES runs (C1 3/3, C2 4/5, C3 2/5, full_es 0/3)",
+  "beat_frozen": "none of 19",
+  "accepted_changes": "all tied or hurt; 3 introduced a nominal crash (frozen s1 has none)"
+ },
+ "cost_core_hours": 54.3,
+ "configs": {
+  "C1": "CRN antithetic ES on the readout subspace (W_out, b_o, W_g, b_g; ~360 params)",
+  "C2": "<=14-dim excitability subspace (b_h, b_o, b_g, log-gains) with a paired gate",
+  "C3": "uncapped log-score fitness on mined hit-frontier cases, same subspace as C2"
+ },
+ "naming": "probe = classical + pulse law (the classical controller with its pulse law kept on during manoeuvres, ablate14.ClassicalUnsuppressed); rule = the same arm in P5; snn_s<k> = snn11_s<k>; ppo_s<k> = mlp_ppo_s<k>",
+ "workstation_same_protocol": {
+  "frozen_s1": 0.9227,
+  "classical": 0.855
+ }
+}

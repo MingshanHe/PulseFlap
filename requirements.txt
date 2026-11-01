@@ -1,0 +1,11 @@
+# Versions used for the paper's runs (Python 3.11). Episodes are bit-reproducible only with the same build of
+# MuJoCo, numpy and the C++ compiler that builds FlapSim's native backend; see README.md, "Reproducibility".
+mujoco==3.8.0
+numpy==2.2.4
+scipy==1.15.2
+neat-python==2.0.0          # imported by the pulse-law module (pilot_v3)
+matplotlib==3.10.1          # figures
+# MLP + PPO arm only
+torch==2.6.0
+gymnasium==1.1.1
+stable-baselines3==2.6.0

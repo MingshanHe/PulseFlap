@@ -1,0 +1,25 @@
+{
+ "study": "Q1 physics step-size / integrator sensitivity of the frozen-controller ranking",
+ "written": "2026-10-31, on HomePC, before any Q1 variant episode was run",
+ "source": "criterion as preregistered for the cluster experiments (text transcribed verbatim)",
+ "change": "only MuJoCo model.opt.timestep (and opt.integrator for rk4), set once per worker after env build; sensors, actuators, the 2 ms control tick and limits unchanged",
+ "variants": {
+  "dt5": "5 us, implicitfast (MJCF default; reference, must reproduce stored rows bit for bit)",
+  "dt2p5": "2.5 us, implicitfast",
+  "dt10": "10 us, implicitfast",
+  "rk4": "5 us, RK4 (only if cost < ~2x dt5)"
+ },
+ "sets": {
+  "kick": "blind12 TESTS['kick'] cases (runs/spike_steer/v12/kick/cases.json), 192 cases",
+  "turbc15": "blind16 turbc15 sustained x1.5 (runs/spike_steer/v16/turbc15/cases.json), 192 cases",
+  "nominal": "v11 nominal T.cases9(task, 2_099_100_000, 64), optional"
+ },
+ "arms": ["classical (blind12.load_arms opponent)", "probe (ablate14.job kind 'classical_unsup')", "snn11_s1..s5", "mlp_ppo_s1..s5 (ppo_blind14 episode code)"],
+ "criterion": {
+  "statement": "The qualitative ranking is step-size-robust if, at each tested step size, (a) and (b) hold.",
+  "a": "on kick, the probe crashes fewer times than the SNN in >= 4 of 5 seeds",
+  "b": "at x1.5 (turbc15), the SNN has a paired delta vs the probe (paired_report.paired, probe as opponent) with 95% upper bound < 0 in >= 3 of 5 seeds",
+  "descriptive": "absolute crash-count drift per arm relative to dt5"
+ },
+ "budget": "~18 workers; priority dt5 selftest > dt2p5+dt10 on kick and x1.5 > rk4 > nominal; drop rk4 and nominal if total > ~8 h wall"
+}

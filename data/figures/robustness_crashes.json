@@ -1,0 +1,341 @@
+{
+ "n": 192,
+ "sets": [
+  {
+   "label": "2 mN\u00b7m hit",
+   "classical": 17,
+   "cls_es": [
+    16,
+    16
+   ],
+   "snn": [
+    9,
+    4,
+    8,
+    2,
+    6
+   ],
+   "ppo": [
+    10,
+    5,
+    7,
+    5,
+    6
+   ],
+   "h1_pass": 5,
+   "h1_seeds": 5
+  },
+  {
+   "label": "3 mN\u00b7m hit",
+   "classical": 60,
+   "cls_es": [
+    56,
+    58
+   ],
+   "snn": [
+    40,
+    32,
+    34,
+    22,
+    40
+   ],
+   "ppo": [
+    47,
+    41,
+    41,
+    42,
+    42
+   ],
+   "h1_pass": 4,
+   "h1_seeds": 5
+  },
+  {
+   "label": "4.5 mN\u00b7m hit",
+   "classical": 86,
+   "cls_es": [
+    87,
+    89
+   ],
+   "snn": [
+    95,
+    71,
+    67,
+    46,
+    76
+   ],
+   "ppo": [
+    71,
+    78,
+    73,
+    73,
+    76
+   ],
+   "h1_pass": 1,
+   "h1_seeds": 5
+  },
+  {
+   "label": "hit +0\u20130.15 s",
+   "classical": 56,
+   "cls_es": [
+    53,
+    56
+   ],
+   "snn": [
+    42,
+    30,
+    31,
+    22,
+    45
+   ],
+   "ppo": [
+    35,
+    32,
+    34,
+    33,
+    34
+   ],
+   "h1_pass": 4,
+   "h1_seeds": 5
+  },
+  {
+   "label": "hit +0.5\u20131.0 s",
+   "classical": 40,
+   "cls_es": [
+    39,
+    33
+   ],
+   "snn": [
+    12,
+    5,
+    14,
+    9,
+    16
+   ],
+   "ppo": [
+    24,
+    11,
+    15,
+    11,
+    12
+   ],
+   "h1_pass": 5,
+   "h1_seeds": 5
+  },
+  {
+   "label": "hit before cmd",
+   "classical": 7,
+   "cls_es": [
+    3,
+    6
+   ],
+   "snn": [
+    4,
+    2,
+    1,
+    1,
+    2
+   ],
+   "ppo": [
+    6,
+    3,
+    3,
+    3,
+    3
+   ],
+   "h1_pass": 3,
+   "h1_seeds": 5
+  },
+  {
+   "label": "double hit",
+   "classical": 84,
+   "cls_es": [
+    86,
+    80
+   ],
+   "snn": [
+    73,
+    69,
+    60,
+    44,
+    68
+   ],
+   "ppo": [
+    73,
+    68,
+    72,
+    73,
+    68
+   ],
+   "h1_pass": 2,
+   "h1_seeds": 5
+  },
+  {
+   "label": "roll-axis hit",
+   "classical": 0,
+   "cls_es": [
+    2,
+    0
+   ],
+   "snn": [
+    17,
+    0,
+    0,
+    0,
+    0
+   ],
+   "ppo": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "h1_pass": 4,
+   "h1_seeds": 5
+  },
+  {
+   "label": "pitch-axis hit",
+   "classical": 74,
+   "cls_es": [
+    71,
+    71
+   ],
+   "snn": [
+    46,
+    48,
+    47,
+    36,
+    51
+   ],
+   "ppo": [
+    50,
+    55,
+    61,
+    60,
+    60
+   ],
+   "h1_pass": 3,
+   "h1_seeds": 5
+  },
+  {
+   "label": "turbulence \u00d71.25",
+   "classical": 10,
+   "cls_es": [
+    5,
+    8
+   ],
+   "snn": [
+    2,
+    0,
+    1,
+    2,
+    0
+   ],
+   "ppo": [
+    6,
+    1,
+    1,
+    2,
+    1
+   ],
+   "h1_pass": 5,
+   "h1_seeds": 5
+  },
+  {
+   "label": "turbulence \u00d71.5",
+   "classical": 40,
+   "cls_es": [
+    36,
+    38
+   ],
+   "snn": [
+    7,
+    5,
+    9,
+    8,
+    9
+   ],
+   "ppo": [
+    16,
+    5,
+    4,
+    7,
+    5
+   ],
+   "h1_pass": 5,
+   "h1_seeds": 5
+  },
+  {
+   "label": "IMU noise \u00d75",
+   "classical": 3,
+   "cls_es": [
+    1,
+    1
+   ],
+   "snn": [
+    3,
+    0,
+    1,
+    1,
+    1
+   ],
+   "ppo": [
+    3,
+    0,
+    0,
+    0,
+    1
+   ],
+   "h1_pass": 1,
+   "h1_seeds": 5
+  },
+  {
+   "label": "sensor delay 3",
+   "classical": 9,
+   "cls_es": [
+    11,
+    12
+   ],
+   "snn": [
+    2,
+    0,
+    4,
+    4,
+    4
+   ],
+   "ppo": [
+    5,
+    2,
+    2,
+    1,
+    1
+   ],
+   "h1_pass": 4,
+   "h1_seeds": 5
+  },
+  {
+   "label": "mass +12.5 %",
+   "classical": 0,
+   "cls_es": [
+    0,
+    0
+   ],
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "ppo": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "h1_pass": 0,
+   "h1_seeds": 5
+  }
+ ]
+}

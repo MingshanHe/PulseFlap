@@ -1,0 +1,12 @@
+# FlapSim is a separate repository, fetched by scripts/setup_flapsim.sh
+third_party/
+# workspaces with decompressed rows and new results (pulseflap/workspace.py)
+work*/
+# regenerated figures
+figures/out/
+__pycache__/
+*.pyc
+*.aux
+*.log
+# pdflatex output of the TikZ diagrams
+figures/tikz/*.pdf

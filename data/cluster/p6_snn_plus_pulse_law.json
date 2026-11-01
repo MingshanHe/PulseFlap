@@ -1,0 +1,160 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster.",
+ "note": "delta: paired ratio difference from paired_report (lower is better), [bootstrap 95% CI]; mcnemar: [arm-only crashes, reference-only crashes, exact p]; hybrid = SNN centre in charge, fire = SNN spike OR plan_v9 pulse law",
+ "n": 192,
+ "criterion": "hybrid crashes <= probe on kick in >= 4 of 5 seeds",
+ "criterion_met": true,
+ "seeds_passing": 4,
+ "cost_core_hours": 44.8,
+ "kick": {
+  "base": "blind12 2_099_300_000",
+  "classical": 59,
+  "probe": 5,
+  "hybrid_crashes": [
+   14,
+   0,
+   1,
+   5,
+   5
+  ],
+  "hybrid_d_cls": [
+   [
+    -0.44,
+    -0.858,
+    0.021
+   ],
+   [
+    -1.019,
+    -1.264,
+    -0.774
+   ],
+   [
+    -0.989,
+    -1.241,
+    -0.735
+   ],
+   [
+    -0.884,
+    -1.142,
+    -0.622
+   ],
+   [
+    -0.914,
+    -1.163,
+    -0.673
+   ]
+  ],
+  "hybrid_d_probe": [
+   [
+    0.513,
+    0.105,
+    0.958
+   ],
+   [
+    -0.19,
+    -0.474,
+    0.047
+   ],
+   [
+    -0.104,
+    -0.343,
+    0.092
+   ],
+   [
+    0.037,
+    -0.219,
+    0.263
+   ],
+   [
+    0.019,
+    -0.23,
+    0.243
+   ]
+  ],
+  "hybrid_mcnemar_vs_probe": [
+   [
+    12,
+    3,
+    0.035
+   ],
+   [
+    0,
+    5,
+    0.063
+   ],
+   [
+    0,
+    4,
+    0.125
+   ],
+   [
+    4,
+    4,
+    1.0
+   ],
+   [
+    2,
+    2,
+    1.0
+   ]
+  ],
+  "snn_crashes": [
+   40,
+   32,
+   34,
+   22,
+   38
+  ],
+  "snn_d_probe_range": [
+   1.03,
+   2.02
+  ],
+  "snn_mcnemar_p_max": 0.0002
+ },
+ "nominal": {
+  "base": "T.cases9 2_099_100_000",
+  "classical": 1,
+  "probe": 0,
+  "hybrid_crashes": [
+   0,
+   0,
+   0,
+   2,
+   1
+  ],
+  "hybrid_d_probe": [
+   [
+    0.054,
+    0.03,
+    0.08
+   ],
+   [
+    0.132,
+    null,
+    null
+   ],
+   [
+    0.114,
+    null,
+    null
+   ],
+   [
+    0.296,
+    null,
+    null
+   ],
+   [
+    0.211,
+    null,
+    null
+   ]
+  ],
+  "hybrid_d_probe_note": "all five CIs > 0; only seed 1 CI reported",
+  "snn_d_probe_range": [
+   0.09,
+   0.21
+  ]
+ },
+ "naming": "probe = classical + pulse law (the classical controller with its pulse law kept on during manoeuvres, ablate14.ClassicalUnsuppressed); rule = the same arm in P5; snn_s<k> = snn11_s<k>; ppo_s<k> = mlp_ppo_s<k>",
+ "note_sustained": "the sustained-disturbance conditions of P6 were not reported"
+}

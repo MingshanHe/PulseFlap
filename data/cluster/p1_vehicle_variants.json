@@ -1,0 +1,390 @@
+{
+ "source": "Cluster run (Ubuntu 22.04, g++ 12.3, glibc 2.35, Intel Xeon), FlapSim commit deab6c8. Summary only; the per-episode rows of the cluster runs are not included in this repository. Compare only within the cluster.",
+ "set": "P1 (S14): 11 plants x 7 arms (classical, probe, SNN s1-s5) x 192 cases; blind15 base 2_103_000_000",
+ "n": 192,
+ "complete": true,
+ "cost_core_hours": 128.3,
+ "criterion": "advantage over probe on a plant only if >= 3 of 5 SNN seeds have d_probe upper 95% bound < 0 and crashes not higher",
+ "result": "no plant meets the criterion; every plant attributed to the pulse channel",
+ "order": [
+  "lower125",
+  "lower_com",
+  "wing_mass130",
+  "span95",
+  "chord90",
+  "asym97",
+  "density90",
+  "volt90",
+  "kt90",
+  "lag150",
+  "lower110"
+ ],
+ "plants": {
+  "lower125": {
+   "classical": 0,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "snn_d_probe_range": [
+    0.113,
+    0.171
+   ],
+   "seeds_adv": 0
+  },
+  "lower_com": {
+   "classical": 0,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "snn_d_probe_range": [
+    0.127,
+    0.164
+   ],
+   "seeds_adv": 0
+  },
+  "wing_mass130": {
+   "classical": 9,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "snn_d_probe_range": [
+    0.15,
+    0.251
+   ],
+   "seeds_adv": 0,
+   "snn_d_cls_range": [
+    -0.61,
+    -0.53
+   ]
+  },
+  "span95": {
+   "classical": 8,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    1,
+    1,
+    4
+   ],
+   "snn_d_probe_range": [
+    0.196,
+    0.405
+   ],
+   "seeds_adv": 0
+  },
+  "chord90": {
+   "classical": 3,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "snn_d_probe_range": [
+    0.139,
+    0.246
+   ],
+   "seeds_adv": 0,
+   "snn_d_probe": [
+    [
+     0.185,
+     0.157,
+     0.214
+    ],
+    [
+     0.246,
+     0.209,
+     0.285
+    ],
+    [
+     0.139,
+     0.114,
+     0.167
+    ],
+    [
+     0.172,
+     0.139,
+     0.207
+    ],
+    [
+     0.21,
+     0.124,
+     0.35
+    ]
+   ],
+   "snn_d_cls_range": [
+    -0.2,
+    -0.12
+   ],
+   "note": "only s3's d_cls CI excludes 0"
+  },
+  "asym97": {
+   "classical": 5,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    2,
+    0,
+    2
+   ],
+   "snn_d_probe_range": [
+    -0.117,
+    0.121
+   ],
+   "seeds_adv": 2,
+   "snn_d_probe": [
+    [
+     -0.1,
+     -0.154,
+     -0.046
+    ],
+    [
+     0.121,
+     0.061,
+     0.183
+    ],
+    [
+     -0.034,
+     -0.107,
+     0.057
+    ],
+    [
+     -0.117,
+     -0.172,
+     -0.063
+    ],
+    [
+     -0.063,
+     -0.133,
+     0.014
+    ]
+   ],
+   "snn_d_cls_range": [
+    -0.57,
+    -0.36
+   ]
+  },
+  "density90": {
+   "classical": 5,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   "snn_d_probe_range": [
+    0.151,
+    0.28
+   ],
+   "seeds_adv": 0,
+   "snn_d_probe": [
+    [
+     0.197,
+     0.173,
+     0.223
+    ],
+    [
+     0.23,
+     0.192,
+     0.27
+    ],
+    [
+     0.151,
+     0.122,
+     0.183
+    ],
+    [
+     0.181,
+     0.147,
+     0.216
+    ],
+    [
+     0.28,
+     0.145,
+     0.467
+    ]
+   ],
+   "snn_d_cls_range": [
+    -0.32,
+    -0.21
+   ]
+  },
+  "volt90": {
+   "classical": 17,
+   "probe": 9,
+   "snn": [
+    7,
+    0,
+    7,
+    3,
+    15
+   ],
+   "snn_d_probe_range": [
+    -0.493,
+    0.319
+   ],
+   "seeds_adv": 1,
+   "snn_d_probe": [
+    [
+     -0.045,
+     -0.484,
+     0.36
+    ],
+    [
+     -0.493,
+     -0.928,
+     -0.107
+    ],
+    [
+     -0.069,
+     -0.49,
+     0.329
+    ],
+    [
+     -0.295,
+     -0.674,
+     0.026
+    ],
+    [
+     0.319,
+     -0.144,
+     0.774
+    ]
+   ],
+   "mcnemar_vs_probe": [
+    [
+     4,
+     6,
+     0.75
+    ],
+    [
+     0,
+     9,
+     0.004
+    ],
+    [
+     3,
+     5,
+     0.73
+    ],
+    [
+     0,
+     6,
+     0.031
+    ],
+    [
+     10,
+     4,
+     0.18
+    ]
+   ],
+   "snn_d_cls_range": [
+    -0.07,
+    0.26
+   ]
+  },
+  "kt90": {
+   "classical": 1,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "snn_d_probe_range": [
+    0.125,
+    0.251
+   ],
+   "seeds_adv": 0,
+   "snn_d_probe": [
+    [
+     0.134,
+     0.104,
+     0.163
+    ],
+    [
+     0.251,
+     0.211,
+     0.292
+    ],
+    [
+     0.136,
+     0.102,
+     0.174
+    ],
+    [
+     0.143,
+     0.111,
+     0.178
+    ],
+    [
+     0.125,
+     0.092,
+     0.162
+    ]
+   ]
+  },
+  "lag150": {
+   "classical": 17,
+   "probe": 0,
+   "snn": [
+    3,
+    1,
+    1,
+    0,
+    5
+   ],
+   "snn_d_probe_range": [
+    0.117,
+    0.446
+   ],
+   "seeds_adv": 0
+  },
+  "lower110": {
+   "classical": 0,
+   "probe": 0,
+   "snn": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "snn_d_probe_range": [
+    0.131,
+    0.234
+   ],
+   "seeds_adv": 0,
+   "snn_d_cls_range": [
+    0.017,
+    0.102
+   ],
+   "note": "SNN slightly worse than classical"
+  }
+ },
+ "summary": "probe 0 crashes on 10/11 plants (9 on volt90); where classical crashes, SNN beats classical (d_cls -0.3..-0.6) but not the probe",
+ "naming": "probe = classical + pulse law (the classical controller with its pulse law kept on during manoeuvres, ablate14.ClassicalUnsuppressed); rule = the same arm in P5; snn_s<k> = snn11_s<k>; ppo_s<k> = mlp_ppo_s<k>"
+}

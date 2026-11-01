@@ -1,0 +1,457 @@
+{
+ "variant": "dt5",
+ "per_set": {
+  "kick": {
+   "cases_per_task": 6,
+   "wall_s": 336.38847732543945,
+   "arms": {
+    "classical": {
+     "n": 18,
+     "identical": 18
+    },
+    "probe": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s1": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s2": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s3": {
+     "n": 18,
+     "identical": 17,
+     "first_diff": {
+      "ref_abs_mean": [
+       0.10704312984805744,
+       0.10738489418563842
+      ]
+     }
+    },
+    "snn11_s4": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s5": {
+     "n": 18,
+     "identical": 18
+    },
+    "mlp_ppo_s1": {
+     "n": 18,
+     "identical": 0,
+     "first_diff": {
+      "goal_t": [
+       0.8644505558357092,
+       0.8664505558357094
+      ],
+      "onsets": [
+       7,
+       6
+      ],
+      "ref_abs_mean": [
+       0.07558624467954039,
+       0.07514213205736595
+      ],
+      "pulses": [
+       38,
+       35
+      ],
+      "tilt_peak_deg": [
+       43.83131788241502,
+       43.89668575348545
+      ],
+      "objective": [
+       1.325085775564472,
+       1.326746234616659
+      ],
+      "cross_m": [
+       0.0006630890517098228,
+       0.0001393533114001984
+      ],
+      "t_reach": [
+       0.8644505558357092,
+       0.8664505558357094
+      ],
+      "max_along_m": [
+       0.14901847710581612,
+       0.14756106926960075
+      ],
+      "score_bench9": [
+       0.9889697004906897,
+       0.9910416433863851
+      ],
+      "alt_dev_cm": [
+       4.167307580429935,
+       4.150713696499187
+      ],
+      "score": [
+       0.9898013277744622,
+       0.9910416433863851
+      ],
+      "height_loss_cm": [
+       4.139586670970852,
+       4.150713696499187
+      ]
+     }
+    },
+    "mlp_ppo_s2": {
+     "n": 18,
+     "identical": 0,
+     "first_diff": {
+      "goal_t": [
+       1.5344505558357096,
+       1.5404505558357093
+      ],
+      "onsets": [
+       8,
+       7
+      ],
+      "ref_abs_mean": [
+       0.07715706628432498,
+       0.07626736727551556
+      ],
+      "pulses": [
+       32,
+       29
+      ],
+      "tilt_peak_deg": [
+       43.90463647931236,
+       43.86373947134479
+      ],
+      "objective": [
+       2.3405542317946053,
+       2.3393529832314846
+      ],
+      "cross_m": [
+       0.07491360907388607,
+       0.07480295244136644
+      ],
+      "max_along_m": [
+       0.0984268788628716,
+       0.09884481947599888
+      ],
+      "score_bench9": [
+       1.7483273378069089,
+       1.7474300393491864
+      ],
+      "alt_dev_cm": [
+       6.504644063289399,
+       6.615891929616402
+      ],
+      "score": [
+       1.7483273378069089,
+       1.7474300393491864
+      ],
+      "height_loss_cm": [
+       6.504644063289399,
+       6.615891929616402
+      ]
+     }
+    },
+    "mlp_ppo_s3": {
+     "n": 18,
+     "identical": 0,
+     "first_diff": {
+      "goal_t": [
+       1.5444505558357093,
+       1.5464505558357096
+      ],
+      "onsets": [
+       12,
+       13
+      ],
+      "ref_abs_mean": [
+       0.07562991504089889,
+       0.07444385579700581
+      ],
+      "pulses": [
+       50,
+       61
+      ],
+      "tilt_peak_deg": [
+       47.63385204336192,
+       47.137716002934695
+      ],
+      "objective": [
+       15.915711161458967,
+       2.4175004681509322
+      ],
+      "cross_m": [
+       0.07270978550599577,
+       0.07274569271310136
+      ],
+      "max_along_m": [
+       0.09454237532504982,
+       0.0945785150301329
+      ],
+      "flown": [
+       false,
+       true
+      ],
+      "score_bench9": [
+       11.807105250335145,
+       1.8054484332986955
+      ],
+      "alt_dev_cm": [
+       9.921724033722457,
+       7.173876280299741
+      ],
+      "termination": [
+       "tilt",
+       "time_limit"
+      ],
+      "score": [
+       11.888582860514173,
+       1.8058039844642138
+      ],
+      "cancelled": [
+       4,
+       3
+      ],
+      "elapsed": [
+       4.954,
+       5.0
+      ],
+      "height_loss_cm": [
+       7.20580369442152,
+       7.162024574782466
+      ]
+     }
+    },
+    "mlp_ppo_s4": {
+     "n": 18,
+     "identical": 0,
+     "first_diff": {
+      "goal_t": [
+       1.5784505558357091,
+       1.5844505558357094
+      ],
+      "onsets": [
+       7,
+       8
+      ],
+      "ref_abs_mean": [
+       0.08688375930385663,
+       0.08950305496619082
+      ],
+      "pulses": [
+       31,
+       35
+      ],
+      "tilt_peak_deg": [
+       42.99191083739375,
+       43.03203112923143
+      ],
+      "objective": [
+       2.475380591525872,
+       2.484707182793275
+      ],
+      "cross_m": [
+       0.018812788897193542,
+       0.019568696956654186
+      ],
+      "max_along_m": [
+       0.0818355077013189,
+       0.08161615977817321
+      ],
+      "score_bench9": [
+       1.8490387878442898,
+       1.8560054858425026
+      ],
+      "alt_dev_cm": [
+       5.266249013629398,
+       5.412757838196914
+      ],
+      "score": [
+       1.8490387878442898,
+       1.8560054858425024
+      ],
+      "height_loss_cm": [
+       5.266249013629398,
+       5.412757838196914
+      ]
+     }
+    },
+    "mlp_ppo_s5": {
+     "n": 18,
+     "identical": 0,
+     "first_diff": {
+      "goal_t": [
+       1.5704505558357091,
+       1.5424505558357096
+      ],
+      "onsets": [
+       7,
+       4
+      ],
+      "ref_abs_mean": [
+       0.07626284243812786,
+       0.07521084870393853
+      ],
+      "pulses": [
+       31,
+       21
+      ],
+      "tilt_peak_deg": [
+       41.610444647913354,
+       41.5468430230391
+      ],
+      "objective": [
+       2.3762504883632847,
+       2.375758406744747
+      ],
+      "cross_m": [
+       0.06508232736371945,
+       0.06478996283631332
+      ],
+      "max_along_m": [
+       0.09401721410816022,
+       0.0935632508755013
+      ],
+      "score_bench9": [
+       1.7749914246153313,
+       1.774623853663787
+      ],
+      "alt_dev_cm": [
+       6.087413400502461,
+       5.9287127000214435
+      ],
+      "score": [
+       1.7749914246153313,
+       1.774623853663787
+      ],
+      "cancelled": [
+       0,
+       1
+      ],
+      "height_loss_cm": [
+       6.087413400502461,
+       5.9287127000214435
+      ]
+     }
+    }
+   }
+  },
+  "turbc15": {
+   "cases_per_task": 6,
+   "wall_s": 372.58804631233215,
+   "arms": {
+    "classical": {
+     "n": 18,
+     "identical": 18
+    },
+    "probe": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s1": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s2": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s3": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s4": {
+     "n": 18,
+     "identical": 18
+    },
+    "snn11_s5": {
+     "n": 18,
+     "identical": 18
+    },
+    "mlp_ppo_s1": {
+     "n": 18,
+     "identical": 18
+    },
+    "mlp_ppo_s2": {
+     "n": 18,
+     "identical": 18
+    },
+    "mlp_ppo_s3": {
+     "n": 18,
+     "identical": 18
+    },
+    "mlp_ppo_s4": {
+     "n": 18,
+     "identical": 18
+    },
+    "mlp_ppo_s5": {
+     "n": 18,
+     "identical": 18
+    }
+   }
+  }
+ },
+ "opt_after_reset": {
+  "dt5": {
+   "variant": "dt5",
+   "before": {
+    "timestep": 5e-06,
+    "integrator": 3,
+    "substeps": 400,
+    "imu_period": 200
+   },
+   "after_reset": {
+    "timestep": 5e-06,
+    "integrator": 3,
+    "substeps": 400,
+    "imu_period": 200
+   }
+  },
+  "dt2p5": {
+   "variant": "dt2p5",
+   "before": {
+    "timestep": 2.5e-06,
+    "integrator": 3,
+    "substeps": 800,
+    "imu_period": 200
+   },
+   "after_reset": {
+    "timestep": 2.5e-06,
+    "integrator": 3,
+    "substeps": 800,
+    "imu_period": 400
+   }
+  },
+  "dt10": {
+   "variant": "dt10",
+   "before": {
+    "timestep": 1e-05,
+    "integrator": 3,
+    "substeps": 200,
+    "imu_period": 200
+   },
+   "after_reset": {
+    "timestep": 1e-05,
+    "integrator": 3,
+    "substeps": 200,
+    "imu_period": 100
+   }
+  },
+  "rk4": {
+   "variant": "rk4",
+   "before": {
+    "timestep": 5e-06,
+    "integrator": 1,
+    "substeps": 400,
+    "imu_period": 200
+   },
+   "after_reset": {
+    "timestep": 5e-06,
+    "integrator": 1,
+    "substeps": 400,
+    "imu_period": 200
+   }
+  }
+ },
+ "bit_for_bit": false,
+ "note": "dt5, 18 cases per set per arm (6/task): turbc15 all 12 arms bit-for-bit 18/18; kick classical, probe, snn11 s1,s2,s4,s5 18/18 and s3 17/18 (one row differs only in ref_abs_mean). Full 192-case HomePC dt5 re-run of kick learned arms: snn11 190-192/192 identical, all differing rows have identical crash outcome (score diffs <1e-3); mlp_ppo kick references (v14/kick__mlp_ppo_s*, produced on CloudPC-2) are NOT reproducible on HomePC (0/192 identical, crash counts within +/-2). dt5 kick references for snn11 and mlp_ppo therefore use the HomePC re-run (runs/spike_steer/q1/dt5/kick); classical, probe and all turbc15 dt5 rows are the stored references."
+}

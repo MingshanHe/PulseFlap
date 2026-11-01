@@ -1,0 +1,94 @@
+kick / dt5
+  classical   crashes  60 (drift +0)  Δprobe +2.875 [+2.190, +3.567]  McNemar 55/0 p=5.55e-17
+  probe       crashes   5 (drift +0)  Δcls -0.792 [-1.001, -0.594]
+  snn11_s1    crashes  40 (drift +0)  Δcls -0.125 [-0.426, +0.209]  Δprobe +2.024 [+1.415, +2.647]  McNemar 36/1 p=5.53e-10
+  snn11_s2    crashes  32 (drift +0)  Δcls -0.282 [-0.448, -0.121]  Δprobe +1.538 [+0.979, +2.148]  McNemar 29/2 p=4.63e-07
+  snn11_s3    crashes  34 (drift +0)  Δcls -0.355 [-0.540, -0.186]  Δprobe +1.552 [+1.019, +2.120]  McNemar 30/1 p=2.98e-08
+  snn11_s4    crashes  22 (drift +0)  Δcls -0.584 [-0.815, -0.377]  Δprobe +1.071 [+0.622, +1.567]  McNemar 18/1 p=7.63e-05
+  snn11_s5    crashes  40 (drift +0)  Δcls -0.263 [-0.473, -0.024]  Δprobe +1.838 [+1.279, +2.420]  McNemar 35/0 p=5.82e-11
+  mlp_ppo_s1  crashes  46 (drift +0)  Δcls -0.116 [-0.279, +0.038]  Δprobe +2.212 [+1.591, +2.844]  McNemar 42/1 p=1e-11
+  mlp_ppo_s2  crashes  41 (drift +0)  Δcls -0.210 [-0.337, -0.090]  Δprobe +1.984 [+1.396, +2.591]  McNemar 37/1 p=2.84e-10
+  mlp_ppo_s3  crashes  42 (drift +0)  Δcls -0.209 [-0.347, -0.085]  Δprobe +1.994 [+1.400, +2.623]  McNemar 38/1 p=1.46e-10
+  mlp_ppo_s4  crashes  43 (drift +0)  Δcls -0.117 [-0.284, +0.096]  Δprobe +2.062 [+1.436, +2.688]  McNemar 39/1 p=7.46e-11
+  mlp_ppo_s5  crashes  40 (drift +0)  Δcls -0.196 [-0.322, -0.080]  Δprobe +1.851 [+1.272, +2.464]  McNemar 36/1 p=5.53e-10
+  (a) probe crashes fewer than SNN in 5 / 5 seeds -> HOLDS
+kick / dt2p5
+  classical   crashes  61 (drift +1)  Δprobe +2.952 [+2.265, +3.662]  McNemar 56/0 p=2.78e-17
+  probe       crashes   5 (drift +0)  Δcls -0.830 [-1.060, -0.617]
+  snn11_s1    crashes  40 (drift +0)  Δcls -0.151 [-0.467, +0.191]  Δprobe +1.974 [+1.372, +2.587]  McNemar 36/1 p=5.53e-10
+  snn11_s2    crashes  32 (drift +0)  Δcls -0.366 [-0.568, -0.179]  Δprobe +1.548 [+0.959, +2.169]  McNemar 29/2 p=4.63e-07
+  snn11_s3    crashes  35 (drift +1)  Δcls -0.377 [-0.560, -0.221]  Δprobe +1.632 [+1.075, +2.211]  McNemar 31/1 p=1.54e-08
+  snn11_s4    crashes  23 (drift +1)  Δcls -0.602 [-0.829, -0.400]  Δprobe +1.131 [+0.623, +1.672]  McNemar 20/2 p=0.000121
+  snn11_s5    crashes  36 (drift -4)  Δcls -0.367 [-0.624, -0.105]  Δprobe +1.585 [+1.024, +2.191]  McNemar 32/1 p=7.92e-09
+  mlp_ppo_s1  crashes  47 (drift +1)  Δcls -0.139 [-0.300, +0.011]  Δprobe +2.289 [+1.669, +2.931]  McNemar 43/1 p=5.12e-12
+  mlp_ppo_s2  crashes  45 (drift +4)  Δcls -0.173 [-0.260, -0.089]  Δprobe +2.134 [+1.509, +2.777]  McNemar 41/1 p=1.96e-11
+  mlp_ppo_s3  crashes  41 (drift -1)  Δcls -0.228 [-0.360, -0.120]  Δprobe +1.968 [+1.372, +2.604]  McNemar 37/1 p=2.84e-10
+  mlp_ppo_s4  crashes  45 (drift +2)  Δcls -0.092 [-0.264, +0.124]  Δprobe +2.144 [+1.517, +2.790]  McNemar 41/1 p=1.96e-11
+  mlp_ppo_s5  crashes  42 (drift +2)  Δcls -0.184 [-0.272, -0.103]  Δprobe +1.959 [+1.362, +2.592]  McNemar 38/1 p=1.46e-10
+  (a) probe crashes fewer than SNN in 5 / 5 seeds -> HOLDS
+kick / dt10
+  classical   crashes  81 (drift +21)  Δprobe +1.064 [+0.676, +1.456]  McNemar 40/9 p=9.26e-06
+  probe       crashes  50 (drift +45)  Δcls -0.339 [-0.500, -0.191]
+  snn11_s1    crashes  61 (drift +21)  Δcls -0.110 [-0.404, +0.167]  Δprobe +0.844 [+0.410, +1.279]  McNemar 29/18 p=0.144
+  snn11_s2    crashes  64 (drift +32)  Δcls +0.054 [-0.169, +0.315]  Δprobe +0.971 [+0.629, +1.370]  McNemar 22/8 p=0.0161
+  snn11_s3    crashes  66 (drift +32)  Δcls -0.089 [-0.276, +0.126]  Δprobe +0.837 [+0.517, +1.197]  McNemar 24/8 p=0.007
+  snn11_s4    crashes  59 (drift +37)  Δcls -0.073 [-0.307, +0.197]  Δprobe +0.569 [+0.257, +0.921]  McNemar 16/7 p=0.0931
+  snn11_s5    crashes  70 (drift +30)  Δcls +0.102 [-0.165, +0.395]  Δprobe +1.007 [+0.621, +1.411]  McNemar 29/9 p=0.00166
+  mlp_ppo_s1  crashes  78 (drift +32)  Δcls +0.145 [-0.040, +0.387]  Δprobe +1.194 [+0.811, +1.595]  McNemar 34/6 p=8.36e-06
+  mlp_ppo_s2  crashes  62 (drift +21)  Δcls -0.230 [-0.488, +0.007]  Δprobe +0.616 [+0.220, +1.025]  McNemar 25/13 p=0.073
+  mlp_ppo_s3  crashes  72 (drift +30)  Δcls +0.010 [-0.126, +0.183]  Δprobe +0.952 [+0.605, +1.321]  McNemar 30/8 p=0.000472
+  mlp_ppo_s4  crashes  69 (drift +26)  Δcls -0.056 [-0.268, +0.149]  Δprobe +0.922 [+0.539, +1.327]  McNemar 29/10 p=0.00338
+  mlp_ppo_s5  crashes  67 (drift +27)  Δcls -0.034 [-0.170, +0.151]  Δprobe +0.859 [+0.520, +1.231]  McNemar 26/9 p=0.00599
+  (a) probe crashes fewer than SNN in 5 / 5 seeds -> HOLDS
+turbc15 / dt5
+  classical   crashes  32 (drift +0)  Δprobe +1.724 [+1.136, +2.355]  McNemar 20/0 p=1.91e-06
+  probe       crashes  12 (drift +0)  Δcls -1.121 [-1.555, -0.728]
+  snn11_s1    crashes   2 (drift +0)  Δcls -1.535 [-2.164, -0.957]  Δprobe -0.508 [-1.200, +0.100]  McNemar 2/12 p=0.0129
+  snn11_s2    crashes   3 (drift +0)  Δcls -1.444 [-2.064, -0.888]  Δprobe -0.344 [-1.050, +0.322]  McNemar 3/12 p=0.0352
+  snn11_s3    crashes   7 (drift +0)  Δcls -1.408 [-2.040, -0.809]  Δprobe -0.364 [-1.067, +0.263]  McNemar 7/12 p=0.359
+  snn11_s4    crashes   1 (drift +0)  Δcls -1.605 [-2.269, -1.032]  Δprobe -0.618 [-1.300, -0.031]  McNemar 1/12 p=0.00342
+  snn11_s5    crashes   6 (drift +0)  Δcls -1.329 [-1.952, -0.784]  Δprobe -0.211 [-0.951, +0.498]  McNemar 6/12 p=0.238
+  mlp_ppo_s1  crashes  10 (drift +0)  Δcls -1.320 [-1.960, -0.719]  Δprobe -0.216 [-0.935, +0.475]  McNemar 10/12 p=0.832
+  mlp_ppo_s2  crashes   5 (drift +0)  Δcls -1.309 [-1.916, -0.763]  Δprobe -0.153 [-0.883, +0.575]  McNemar 5/12 p=0.143
+  mlp_ppo_s3  crashes   6 (drift +0)  Δcls -1.280 [-1.881, -0.732]  Δprobe -0.108 [-0.854, +0.634]  McNemar 6/12 p=0.238
+  mlp_ppo_s4  crashes   5 (drift +0)  Δcls -1.336 [-1.948, -0.793]  Δprobe -0.185 [-0.929, +0.514]  McNemar 5/12 p=0.143
+  mlp_ppo_s5  crashes   5 (drift +0)  Δcls -1.312 [-1.919, -0.770]  Δprobe -0.152 [-0.881, +0.585]  McNemar 5/12 p=0.143
+  (b) SNN Δ vs probe upper 95% < 0 in 1 / 5 seeds -> fails
+turbc15 / dt2p5
+  classical   crashes  28 (drift -4)  Δprobe +1.549 [+1.001, +2.148]  McNemar 16/0 p=3.05e-05
+  probe       crashes  12 (drift +0)  Δcls -0.974 [-1.365, -0.613]
+  snn11_s1    crashes   2 (drift +0)  Δcls -1.390 [-1.989, -0.844]  Δprobe -0.520 [-1.222, +0.086]  McNemar 2/12 p=0.0129
+  snn11_s2    crashes   2 (drift -1)  Δcls -1.348 [-1.947, -0.804]  Δprobe -0.433 [-1.127, +0.175]  McNemar 2/12 p=0.0129
+  snn11_s3    crashes   6 (drift -1)  Δcls -1.293 [-1.905, -0.728]  Δprobe -0.430 [-1.099, +0.171]  McNemar 6/12 p=0.238
+  snn11_s4    crashes   2 (drift +1)  Δcls -1.398 [-1.990, -0.855]  Δprobe -0.541 [-1.244, +0.081]  McNemar 2/12 p=0.0129
+  snn11_s5    crashes   8 (drift +2)  Δcls -1.089 [-1.694, -0.570]  Δprobe -0.093 [-0.853, +0.633]  McNemar 8/12 p=0.503
+  mlp_ppo_s1  crashes   9 (drift -1)  Δcls -1.172 [-1.771, -0.601]  Δprobe -0.221 [-0.916, +0.451]  McNemar 9/12 p=0.664
+  mlp_ppo_s2  crashes   6 (drift +1)  Δcls -1.106 [-1.668, -0.600]  Δprobe -0.086 [-0.829, +0.652]  McNemar 6/12 p=0.238
+  mlp_ppo_s3  crashes   6 (drift +0)  Δcls -1.111 [-1.673, -0.605]  Δprobe -0.093 [-0.839, +0.654]  McNemar 6/12 p=0.238
+  mlp_ppo_s4  crashes   5 (drift +0)  Δcls -1.187 [-1.762, -0.675]  Δprobe -0.205 [-0.923, +0.480]  McNemar 5/12 p=0.143
+  mlp_ppo_s5  crashes   5 (drift +0)  Δcls -1.172 [-1.751, -0.661]  Δprobe -0.180 [-0.912, +0.535]  McNemar 5/12 p=0.143
+  (b) SNN Δ vs probe upper 95% < 0 in 0 / 5 seeds -> fails
+turbc15 / dt10
+  classical   crashes  59 (drift +27)  Δprobe +0.885 [+0.436, +1.367]  McNemar 18/6 p=0.0227
+  probe       crashes  47 (drift +35)  Δcls -0.657 [-0.990, -0.350]
+  snn11_s1    crashes  30 (drift +28)  Δcls -1.364 [-1.926, -0.816]  Δprobe -0.948 [-1.603, -0.344]  McNemar 7/24 p=0.00333
+  snn11_s2    crashes  39 (drift +36)  Δcls -1.051 [-1.560, -0.565]  Δprobe -0.544 [-1.116, -0.011]  McNemar 7/15 p=0.134
+  snn11_s3    crashes  39 (drift +32)  Δcls -1.175 [-1.779, -0.607]  Δprobe -0.687 [-1.369, -0.065]  McNemar 10/18 p=0.185
+  snn11_s4    crashes  36 (drift +35)  Δcls -1.303 [-1.883, -0.746]  Δprobe -0.873 [-1.501, -0.291]  McNemar 7/18 p=0.0433
+  snn11_s5    crashes  39 (drift +33)  Δcls -1.156 [-1.687, -0.649]  Δprobe -0.635 [-1.237, -0.030]  McNemar 8/16 p=0.152
+  mlp_ppo_s1  crashes  43 (drift +33)  Δcls -1.150 [-1.708, -0.610]  Δprobe -0.563 [-1.210, +0.053]  McNemar 10/14 p=0.541
+  mlp_ppo_s2  crashes  30 (drift +25)  Δcls -1.480 [-2.052, -0.935]  Δprobe -0.985 [-1.662, -0.317]  McNemar 6/23 p=0.00232
+  mlp_ppo_s3  crashes  30 (drift +24)  Δcls -1.502 [-2.076, -0.961]  Δprobe -1.006 [-1.683, -0.337]  McNemar 6/23 p=0.00232
+  mlp_ppo_s4  crashes  31 (drift +26)  Δcls -1.385 [-1.958, -0.827]  Δprobe -0.898 [-1.560, -0.272]  McNemar 5/21 p=0.00249
+  mlp_ppo_s5  crashes  32 (drift +27)  Δcls -1.426 [-1.982, -0.904]  Δprobe -0.924 [-1.570, -0.264]  McNemar 6/21 p=0.00592
+  (b) SNN Δ vs probe upper 95% < 0 in 5 / 5 seeds -> HOLDS
+verdict per step: {"dt5": {"a": true, "b": false, "robust": false}, "dt2p5": {"a": true, "b": false, "robust": false}, "dt10": {"a": true, "b": true, "robust": true}}
+ranking step-size-robust over tested steps: False
+
+NOTES
+- code: pulseflap/spike_steer/stepsize_q1.py (new). Override: B._ENV.sim.model.opt.timestep set once per worker after env build (bench8._init / ppo_blind14._init, then apply_step); model is the same object as env.air.sim.model, env.air.env.sim.model and backend.model; mj_resetData/mj_setConst/reset do not restore opt (checked in every pool); the 2 ms tick re-derives substeps (400/800/200) and the IMU re-derives its 1 kHz period at every reset (200/400/100). Episodes: ablate14.job (classical, classical_unsup=probe), bench10.run_grouped (snn11 s1-5, chunk 5), ppo_blind14.job (mlp_ppo s1-5). Cases regenerated with cases12 / cases16 and asserted equal to the stored cases.json.
+- selftest: dt5, 18 cases per set per arm (6/task): turbc15 all 12 arms bit-for-bit 18/18; kick classical, probe, snn11 s1,s2,s4,s5 18/18 and s3 17/18 (one row differs only in ref_abs_mean). Full 192-case HomePC dt5 re-run of kick learned arms: snn11 190-192/192 identical, all differing rows have identical crash outcome (score diffs <1e-3); mlp_ppo kick references (v14/kick__mlp_ppo_s*, produced on CloudPC-2) are NOT reproducible on HomePC (0/192 identical, crash counts within +/-2). dt5 kick references for snn11 and mlp_ppo therefore use the HomePC re-run (runs/spike_steer/q1/dt5/kick); classical, probe and all turbc15 dt5 rows are the stored references.
+- rk4: dropped: not executable as specified. The plant steps through topology_hover/sensor_step.cpp, which splits mj_step into mj_step1/mj_step2; MuJoCo 3.8 mj_step2 has no RK4 path and falls back to Euler. Verified: opt.integrator=RK4 gives qpos bit-identical to Euler after 50 ticks. True RK4 would need a change to the native loop (and blade forces would still be held over the RK4 stages).
+- nominal: dropped: dt10+dt2p5 on nominal plus a dt5 reproduction would push total past ~8 h.
+- criterion_reading: The conjunctive criterion is False, but because (b) already fails at the dt5 reference (1/5 seeds; identical to plan_v16 R1 = 1 seed), and fails the same way at dt2p5 (0/5). (a) holds at all three steps (5/5). dt2p5 reproduces dt5 to within <=4 crashes per arm on both sets (5 us is converged); dt10 is not converged (+21..+45 crashes per arm on kick, +24..+36 on x1.5), and there (b) flips to 5/5 because the probe degrades most.
+- wall: selftest 12 min (10:42-10:54) + chain 10:54:29-16:07:21 (5 h 13 min); ~5.4 h wall at 18 workers = ~97 core-hours. Per stage: dt10 kick 1765 s, dt10 x1.5 1827 s, dt5 kick learned re-run 2649 s, dt2p5 kick 6036 s, dt2p5 x1.5 6485 s.

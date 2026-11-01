@@ -1,0 +1,48 @@
+experiment,condition,cases,arm,crashes,delta,delta_ci_low,delta_ci_high,delta_reference,mcnemar_arm_only,mcnemar_ref_only,mcnemar_p
+P4,hit 3 mN·m,768,classical_pulse_law,14,,,,,,,
+P4,hit 3 mN·m,768,classical,182,2.294,1.981,2.609,classical_pulse_law,168,0,5e-51
+P4,hit 3 mN·m,768,cls_es_s1,179,2.107,1.795,2.424,classical_pulse_law,167,2,4e-47
+P4,hit 3 mN·m,768,cls_es_s2,171,2.08,1.777,2.401,classical_pulse_law,158,1,4e-46
+P4,hit 3 mN·m,768,snn11_s1,134,1.752,1.481,2.04,classical_pulse_law,121,1,5e-35
+P4,hit 3 mN·m,768,snn11_s2,95,1.16,0.904,1.421,classical_pulse_law,86,5,4e-20
+P4,hit 3 mN·m,768,snn11_s3,95,1.112,0.864,1.365,classical_pulse_law,86,5,4e-20
+P4,hit 3 mN·m,768,snn11_s4,68,0.884,0.658,1.122,classical_pulse_law,59,5,9e-13
+P4,hit 3 mN·m,768,snn11_s5,107,1.255,0.985,1.529,classical_pulse_law,97,4,5e-24
+P4,hit 3 mN·m,768,mlp_ppo_s1,117,1.383,1.117,1.661,classical_pulse_law,106,3,7e-28
+P4,hit 3 mN·m,768,mlp_ppo_s2,117,1.436,1.161,1.724,classical_pulse_law,107,4,5e-27
+P4,hit 3 mN·m,768,mlp_ppo_s3,116,1.447,1.162,1.734,classical_pulse_law,106,4,9e-27
+P4,hit 3 mN·m,768,mlp_ppo_s4,118,1.456,1.186,1.737,classical_pulse_law,108,4,2.5e-27
+P4,hit 3 mN·m,768,mlp_ppo_s5,125,1.518,1.231,1.808,classical_pulse_law,115,4,2.5e-29
+P5,sustained x1.5,576,classical_pulse_law,60,,,,,,,
+P5,sustained x1.5,576,classical,116,1.531,1.22,1.859,classical_pulse_law,,,
+P5,sustained x1.5,576,cls_es_s1,104,0.894,0.658,1.142,classical_pulse_law,,,
+P5,sustained x1.5,576,snn11_s1,20,-0.768,-1.188,-0.377,classical_pulse_law,13,53,7e-07
+P5,sustained x1.5,576,snn11_s2,9,-0.917,-1.311,-0.545,classical_pulse_law,2,53,9e-14
+P5,sustained x1.5,576,snn11_s3,20,-0.864,-1.286,-0.474,classical_pulse_law,13,53,7e-07
+P5,sustained x1.5,576,snn11_s4,14,-0.907,-1.313,-0.514,classical_pulse_law,7,53,8e-10
+P5,sustained x1.5,576,snn11_s5,30,-0.571,-1.007,-0.147,classical_pulse_law,18,48,0.0003
+P5,sustained x1.5,576,mlp_ppo_s1,43,-0.476,-0.917,-0.055,classical_pulse_law,34,51,0.082
+P5,sustained x1.5,576,mlp_ppo_s2,18,-0.655,-1.088,-0.234,classical_pulse_law,11,53,1e-07
+P5,sustained x1.5,576,mlp_ppo_s3,18,-0.677,-1.107,-0.27,classical_pulse_law,10,52,6e-08
+P5,sustained x1.5,576,mlp_ppo_s4,22,-0.599,-1.04,-0.172,classical_pulse_law,14,52,3e-06
+P5,sustained x1.5,576,mlp_ppo_s5,21,-0.591,-1.032,-0.171,classical_pulse_law,13,52,1e-06
+P5,sustained x1.75,576,classical_pulse_law,417,,,,,,,
+P5,sustained x1.75,576,classical,449,0.047,0.035,0.06,classical_pulse_law,,,
+P5,sustained x1.75,576,cls_es_s1,448,0.044,0.033,0.057,classical_pulse_law,,,
+P5,sustained x1.75,576,snn11_s1,218,-0.296,-0.331,-0.261,classical_pulse_law,6,205,7e-53
+P5,sustained x1.75,576,snn11_s2,216,-0.294,-0.328,-0.261,classical_pulse_law,1,202,3e-59
+P5,sustained x1.75,576,snn11_s3,214,-0.303,-0.337,-0.269,classical_pulse_law,3,206,4e-57
+P5,sustained x1.75,576,snn11_s4,214,-0.305,-0.339,-0.271,classical_pulse_law,3,206,4e-57
+P5,sustained x1.75,576,snn11_s5,221,-0.295,-0.33,-0.261,classical_pulse_law,6,202,5e-52
+P5,sustained x1.75,576,mlp_ppo_s1,229,-0.283,-0.319,-0.247,classical_pulse_law,13,201,
+P5,sustained x1.75,576,mlp_ppo_s2,214,-0.296,-0.331,-0.262,classical_pulse_law,2,205,
+P5,sustained x1.75,576,mlp_ppo_s3,214,-0.296,-0.33,-0.262,classical_pulse_law,2,205,
+P5,sustained x1.75,576,mlp_ppo_s4,218,-0.292,-0.327,-0.257,classical_pulse_law,5,204,
+P5,sustained x1.75,576,mlp_ppo_s5,216,-0.294,-0.328,-0.26,classical_pulse_law,3,204,
+P6,hit 3 mN·m,192,classical,59,,,,,,,
+P6,hit 3 mN·m,192,classical_pulse_law,5,,,,,,,
+P6,hit 3 mN·m,192,snn_plus_pulse_law_s1,14,0.513,0.105,0.958,classical_pulse_law,12,3,0.035
+P6,hit 3 mN·m,192,snn_plus_pulse_law_s2,0,-0.19,-0.474,0.047,classical_pulse_law,0,5,0.063
+P6,hit 3 mN·m,192,snn_plus_pulse_law_s3,1,-0.104,-0.343,0.092,classical_pulse_law,0,4,0.125
+P6,hit 3 mN·m,192,snn_plus_pulse_law_s4,5,0.037,-0.219,0.263,classical_pulse_law,4,4,1.0
+P6,hit 3 mN·m,192,snn_plus_pulse_law_s5,5,0.019,-0.23,0.243,classical_pulse_law,2,2,1.0
